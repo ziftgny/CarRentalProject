@@ -25,7 +25,7 @@ namespace Business.Concrete
             return new SuccessResult();
         }
 
-        public IDataResult<User> GetUserById(int id)
+        public IDataResult<User> GetById(int id)
         {
             return new SuccessDataResult<User>(_userDal.Get(p=>p.Id==id));
         }
@@ -35,7 +35,7 @@ namespace Business.Concrete
             return new SuccessDataResult<List<User>>(_userDal.GetAll());
         }
 
-        public IResult Remove(User user)
+        public IResult Delete(User user)
         {
             _userDal.Delete(user);
             return new SuccessResult();

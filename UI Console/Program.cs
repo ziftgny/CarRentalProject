@@ -4,14 +4,11 @@ using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using Entity.Concrete;
 
-/*
+
 UserManager userManager = new UserManager(new EfUserDal());
 foreach (var item in userManager.GetAll().Data)
 {
-    Console.WriteLine(item.Id+" "+item.Email+" "+item.FirstName+" "+item.Password);
+    Console.WriteLine(item.Id+" - "+item.Email+" - "+item.FirstName+" - "+item.Password);
 }
-*/
-Rental rental = new Rental {CarId=1,CustomerId=2,Id=1,RentDate=DateTime.Now};
-RentalManager rentalManager = new RentalManager(new EfRentalDal());
-Console.WriteLine(rentalManager.Add(rental).IsSuccess); 
+
 
