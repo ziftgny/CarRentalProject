@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entity.Concrete;
@@ -18,7 +20,7 @@ namespace Business.Concrete
         {
             _userDal = userDal;
         }
-
+        [ValidationAspect(typeof(UserValidator))]
         public IResult Add(User user)
         {
             _userDal.Add(user);
@@ -40,6 +42,7 @@ namespace Business.Concrete
             _userDal.Delete(user);
             return new SuccessResult();
         }
+        [ValidationAspect(typeof(UserValidator))]
 
         public IResult Update(User user)
         {

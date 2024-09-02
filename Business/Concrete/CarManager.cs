@@ -1,5 +1,8 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation;
+using Core.CrossCuttingConcerns.Validation;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entity.Concrete;
@@ -19,18 +22,10 @@ namespace Business.Concrete
         {
             _carDal = carDal;
         }
-
+        [ValidationAspect(typeof(CarValidator))]
         public IResult Add(Car car)
         {
-            if (Int32.Parse(car.DailyPrice) <0)
-            {
-                return new ErrorResult(Messages.InvalidValue);
-            }
-            else if(car.Name.Count() < 3)
-            {
-                return new ErrorResult(Messages.CarNameMinChar);
-
-            }
+            //validation ekle
             _carDal.Add(car);
             return new SuccessResult();
 
@@ -66,7 +61,7 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(p=>p.ColorId == id));
         }
-
+        [ValidationAspect(typeof(CarValidator))]
         public IResult Update(Car car)
         {
             _carDal.Update(car);

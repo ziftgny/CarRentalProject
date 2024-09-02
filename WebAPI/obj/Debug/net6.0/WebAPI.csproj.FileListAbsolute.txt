@@ -73,3 +73,9 @@ C:\Users\Muhammed\source\repos\CarRentalProject\WebAPI\obj\Debug\net6.0\refint\W
 C:\Users\Muhammed\source\repos\CarRentalProject\WebAPI\obj\Debug\net6.0\WebAPI.pdb
 C:\Users\Muhammed\source\repos\CarRentalProject\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 C:\Users\Muhammed\source\repos\CarRentalProject\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
+C:\Users\Muhammed\source\repos\CarRentalProject\WebAPI\bin\Debug\net6.0\Autofac.dll
+C:\Users\Muhammed\source\repos\CarRentalProject\WebAPI\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\Muhammed\source\repos\CarRentalProject\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Muhammed\source\repos\CarRentalProject\WebAPI\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Muhammed\source\repos\CarRentalProject\WebAPI\bin\Debug\net6.0\Autofac.Extras.DynamicProxy.dll
+C:\Users\Muhammed\source\repos\CarRentalProject\WebAPI\bin\Debug\net6.0\Castle.Core.dll
