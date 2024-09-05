@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Muhammed\\source\\repos\\CarRentalProject\\WebAPI\\wwwroot\\Images\\8ff214cd-8a68-4aeb-b221-49d2f4b0c693.png",
+      "PackagePath": "staticwebassets\\Images\\8ff214cd-8a68-4aeb-b221-49d2f4b0c693.png"
+    },
+    {
+      "Id": "C:\\Users\\Muhammed\\source\\repos\\CarRentalProject\\WebAPI\\wwwroot\\Images\\d63d180a-e4f4-484b-9df5-0d6dd8b647f9.png",
+      "PackagePath": "staticwebassets\\Images\\d63d180a-e4f4-484b-9df5-0d6dd8b647f9.png"
+    },
+    {
+      "Id": "C:\\Users\\Muhammed\\source\\repos\\CarRentalProject\\WebAPI\\wwwroot\\Images\\default.png",
+      "PackagePath": "staticwebassets\\Images\\default.png"
+    },
+    {
+      "Id": "C:\\Users\\Muhammed\\source\\repos\\CarRentalProject\\WebAPI\\wwwroot\\Images\\e209eab3-908a-4aec-9e42-aed77ab0cd0b.png",
+      "PackagePath": "staticwebassets\\Images\\e209eab3-908a-4aec-9e42-aed77ab0cd0b.png"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.WebAPI.props",
+      "PackagePath": "build\\WebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.WebAPI.props",
+      "PackagePath": "buildMultiTargeting\\WebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.WebAPI.props",
+      "PackagePath": "buildTransitive\\WebAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

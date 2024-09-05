@@ -5,8 +5,18 @@ using Business.Concrete;
 using Business.DependencyResolvers.Autofac;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
+using AutoMapper;
+using Business.Utilities.AutoMapper;
+using Business.Utilities.AutoMapper.Profiles;
+
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Register AutoMapper with specific profiles
+builder.Services.AddAutoMapper(cfg =>
+{
+    cfg.AddProfile<CarImageProfile>();
+});
 
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 
@@ -32,7 +42,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseStaticFiles();
 app.UseAuthorization();
 
 app.MapControllers();
