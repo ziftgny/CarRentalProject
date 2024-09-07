@@ -27,6 +27,7 @@ namespace WebAPI.Controllers
                 return BadRequest(result);
             }
         }
+        
         [HttpGet("get")]
         public IActionResult Get(int id)
         {

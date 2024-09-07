@@ -48,13 +48,12 @@ namespace WebAPI.Controllers
         [HttpGet("openimage")]
         public IActionResult OpenImage(int id)
         {
-            var fileStream = _carImageService.GetFileStreamToOpen(id);
-            var contentType = _carImageService.GetImageType(id);
-            if (fileStream.IsSuccess && contentType.IsSuccess)
+            var result = _carImageService.OpenImage(id);
+            if (result.IsSuccess)
             {
-                return File(fileStream.Data, contentType.Data);
+                return File(result.Data.FileStream, result.Data.ImageType);
             }
-            return BadRequest();
+            return BadRequest(result);
         }
 
 
@@ -62,6 +61,19 @@ namespace WebAPI.Controllers
         public IActionResult GetAll()
         {
             var result = _carImageService.GetAll();
+            if (result.IsSuccess)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return BadRequest(result);
+            }
+        }
+        [HttpGet("getallbycarid")]
+        public IActionResult GetAllByCarId(int carId)
+        {
+            var result = _carImageService.GetALLByCarId(carId);
             if (result.IsSuccess)
             {
                 return Ok(result);
@@ -95,9 +107,9 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
         [HttpPost("delete")]
-        public IActionResult Delete(CarImage carImage)
+        public IActionResult Delete(int id)
         {
-            var deleteresult = _carImageService.Delete(carImage);
+            var deleteresult = _carImageService.Delete(id);
             if (deleteresult.IsSuccess)
             {
                 return Ok(deleteresult);

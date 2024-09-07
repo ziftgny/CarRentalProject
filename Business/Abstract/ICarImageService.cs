@@ -14,11 +14,11 @@ namespace Business.Abstract
     public interface ICarImageService
     {
         IDataResult<GetCarImageResponseDTO> GetById(int id);
+        IDataResult<List<GetCarImageResponseDTO>> GetALLByCarId(int carId);
         IDataResult<List<GetCarImageResponseDTO>> GetAll();
         IResult Add(AddCarImageRequestDTO request);
-        IResult Delete(CarImage carImage);
+        IResult Delete(int id);
         IResult Update(UpdateCarImageRequestDTO request);
-        IDataResult<string> GetImageType(int id);
-        IDataResult<FileStream> GetFileStreamToOpen(int id);
+        IDataResult<OpenImageResponseDTO> OpenImage(int id);
     }
 }
