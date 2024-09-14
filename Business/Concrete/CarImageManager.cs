@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Business.Abstract;
+using Business.BusinessAspects.Autofac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
@@ -28,6 +29,7 @@ namespace Business.Concrete
             _mapper = mapper;
             _carService = carService;
         }
+        [SecuredOperation("carimage.add,admin")]
         [ValidationAspect(typeof(AddCarImageRequestDTOValidator))]
         public IResult Add(AddCarImageRequestDTO request)
         {
@@ -42,7 +44,7 @@ namespace Business.Concrete
             }
             return result;
         }
-
+        [SecuredOperation("carimage.delete,admin")]
         public IResult Delete(int id)
         {
             IResult result = BusinessRules.Run(CheckIfCarImageIdExists(id));
@@ -84,6 +86,7 @@ namespace Business.Concrete
             }
             return new ErrorDataResult<GetCarImageResponseDTO>(Messages.CarImageIdDoesntExists);
         }
+        [SecuredOperation("carimage.update,admin")]
         [ValidationAspect(typeof(UpdateCarImageRequestDTOValidator))]
         public IResult Update(UpdateCarImageRequestDTO request)
         {

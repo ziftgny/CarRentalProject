@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Business.BusinessAspects.Autofac;
 
 namespace Business.Concrete
 {
@@ -22,6 +23,7 @@ namespace Business.Concrete
         {
             _carDal = carDal;
         }
+        [SecuredOperation("car.add,admin")]
         [ValidationAspect(typeof(CarValidator))]
         public IResult Add(Car car)
         {
@@ -30,7 +32,7 @@ namespace Business.Concrete
             return new SuccessResult();
 
         }
-
+        [SecuredOperation("car.delete,admin")]
         public IResult Delete(Car car)
         {
             _carDal.Delete(car);
@@ -61,6 +63,7 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(p=>p.ColorId == id));
         }
+        [SecuredOperation("car.update,admin")]
         [ValidationAspect(typeof(CarValidator))]
         public IResult Update(Car car)
         {

@@ -82,3 +82,8 @@ C:\Users\Muhammed\source\repos\CarRentalProject\WebAPI\bin\Debug\net6.0\Castle.C
 C:\Users\Muhammed\source\repos\CarRentalProject\WebAPI\bin\Debug\net6.0\WebAPI.staticwebassets.runtime.json
 C:\Users\Muhammed\source\repos\CarRentalProject\WebAPI\bin\Debug\net6.0\MimeTypesMap.dll
 C:\Users\Muhammed\source\repos\CarRentalProject\WebAPI\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Muhammed\source\repos\CarRentalProject\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Muhammed\source\repos\CarRentalProject\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Muhammed\source\repos\CarRentalProject\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Muhammed\source\repos\CarRentalProject\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Muhammed\source\repos\CarRentalProject\WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll

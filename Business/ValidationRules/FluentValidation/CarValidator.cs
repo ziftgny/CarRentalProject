@@ -1,4 +1,5 @@
-﻿using Entity.Concrete;
+﻿using Core.Utilities.Helpers.Abstracts;
+using Entity.Concrete;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ namespace Business.ValidationRules.FluentValidation
     public class CarValidator : AbstractValidator<Car>
     {
         public CarValidator()
+
         {
             RuleFor(c => c.BrandId).GreaterThan(0);
             RuleFor(c=>c.ModelYear).GreaterThan(0);

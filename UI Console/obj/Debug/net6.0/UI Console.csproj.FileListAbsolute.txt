@@ -76,3 +76,4 @@ C:\Users\Muhammed\source\repos\CarRentalProject\UI Console\bin\Debug\net6.0\Auto
 C:\Users\Muhammed\source\repos\CarRentalProject\UI Console\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Features.dll
 C:\Users\Muhammed\source\repos\CarRentalProject\UI Console\bin\Debug\net6.0\MimeTypesMap.dll
 C:\Users\Muhammed\source\repos\CarRentalProject\UI Console\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\Muhammed\source\repos\CarRentalProject\UI Console\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll

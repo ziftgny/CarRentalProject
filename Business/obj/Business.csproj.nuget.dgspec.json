@@ -76,6 +76,10 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[11.9.2, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.1.34, )"
             }
           },
           "imports": [
@@ -152,6 +156,10 @@
               "target": "Package",
               "version": "[11.9.2, )"
             },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.1.34, )"
+            },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
               "version": "[5.0.17, )"
@@ -159,6 +167,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.32, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "MimeTypesMap": {
               "target": "Package",
