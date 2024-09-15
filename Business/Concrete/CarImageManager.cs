@@ -12,7 +12,6 @@ using Entity.Concrete;
 using Entity.DTOs.Request;
 using Entity.DTOs.Response;
 using HeyRed.Mime;
-using System.Reflection.Metadata.Ecma335;
 
 namespace Business.Concrete
 {
